@@ -1,7 +1,10 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,200;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 #body{
   display: flex;
   color: bisque;
+  font-family: 'Roboto', sans-serif;
 }
 .pic{
   display: flex;
@@ -11,7 +14,7 @@
   align-items: center;
   width: 700px;
   height: 100vh;
-  background: url('/images/bg-overlay.png') center no-repeat, url(/images/bg.jpg) center no-repeat;
+  background: url('/images/bg.jpg') center , url(/images/bg-overlay.jpg) center transparent;
 }
 #body  div > h1{
 text-align: center;
@@ -31,7 +34,10 @@ text-align: center;
 .navBar ul li {
   text-align: center;
   list-style: none;
-  border: 1px solid bisque;
+  border: 2px solid bisque;
+  padding: 10px;
+  font-size: 0.7rem;
+  font-weight: 400;
   
 }
 .navBar ul li a{
