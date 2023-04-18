@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-blend-mode: overlay;
   background: url('/images/bg.jpg') center , url(/images/bg-overlay.jpg) center transparent;
   z-index: -1;
 }
@@ -75,11 +76,11 @@
   border-left: 1px solid  bisque;
   height: 36px;
 }
-@media (min-width: 700px){  
+/* @media (min-width: 700px){  
   .navBar{
     width: 0;
     display: flex;
     justify-content: center;
     
   }
-  }
+  } */
