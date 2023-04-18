@@ -2,20 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,200;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 #body{
   padding: 0;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   color: bisque;
   font-family: 'Roboto', sans-serif;
 }
-#body > img{
-  padding: 0;
-  margin: 0;
-  width: 50px;
-  height: 50px;
-  z-index: 1000;
-  position: absolute;
-} 
+
 .pic{
   width: 700px;
   height: 100vh;
@@ -26,12 +18,24 @@
   justify-content: center;
   align-items: center;
   background: url('/images/bg.jpg') center , url(/images/bg-overlay.jpg) center transparent;
+  z-index: -1;
 }
-#body  div > h2{
+.pic > div {
+  justify-content: center;
+  align-items: bottom;
+}
+.pic > div > img{
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  height: 10%;
+  z-index: 1;
+}
+.meta > h2{
   text-align: center;
   letter-spacing: 0.5px;
 }
-#body  div > p{
+.meta > p{
   font-size: 0.8rem;
   letter-spacing: 0.5px;
 }
@@ -61,6 +65,7 @@
   text-align: center;
 }
 .line{
+  display: flex;
   border-left: 1px solid  bisque;
   height: 36px;
 }
