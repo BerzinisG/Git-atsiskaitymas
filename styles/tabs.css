@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+body {
+background-color: blue;}
+.container {
+  width: 80vh;
+  position: absolute;
+  transform:translateX(-50%);
+  left: 50%;
+  top: 120px;
+  background-color: #2f4f4f;
+  box-shadow: 0 20px 40px #3d6565;
+}
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+h2 {
+  background-color: darkslategray;
+  color: bisque;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  font: 600;
+  border-bottom: 1px solid bisque;
+}
+.tabContent{
+  background-color: darkslategray;
+  padding: 50px 40px;
+}
+.tabContent > img{
+  width: 500px;
+}
+.tabContent div {
+  display: none;
+}
+.tabContent .active {
+  display: block; 
+} 
+ .tabs .active{
+  color: bisque; 
+}
