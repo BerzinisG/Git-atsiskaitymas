@@ -1,0 +1,71 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,200;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+#body{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: bisque;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pic{
+  width: 700px;
+  height: 100vh;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: url('/images/bg.jpg') center , url(/images/bg-overlay.jpg) center transparent;
+  z-index: -1;
+}
+.pic > div {
+  justify-content: center;
+  align-items: bottom;
+}
+.pic > div > img{
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  height: 10%;
+  z-index: 1;
+}
+.meta > h2{
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.meta > p{
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+.meta{
+  border-top: 1px solid bisque;
+  border-bottom: 1px solid bisque;  
+}
+.navBar {
+  width: 100%;
+  display: grid;
+}
+.navBar ul {
+  padding: 0;
+  margin: 0; 
+}
+.navBar ul li {
+  text-align: center;
+  list-style: none;
+  border: 1px solid bisque;
+  padding: 10px;
+  font-size: 0.7rem;
+  font-weight: 400;  
+}
+.navBar ul a{
+  text-decoration: none;
+  color: bisque;
+  text-align: center;
+}
+.line{
+  display: flex;
+  border-left: 1px solid  bisque;
+  height: 36px;
+}
